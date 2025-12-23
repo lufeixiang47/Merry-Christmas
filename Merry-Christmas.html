@@ -185,6 +185,7 @@
 			"https://lufeixiang47.github.io/Merry-Christmas/17.jpg",
 			"https://lufeixiang47.github.io/Merry-Christmas/18.jpg",
 			"https://lufeixiang47.github.io/Merry-Christmas/19.jpg",
+
 			"https://lufeixiang47.github.io/Merry-Christmas/20.jpg"
         ];
 
@@ -606,7 +607,7 @@
                         status.innerText = "状态：平安树 (✊握拳中)";
                     } else if(distFingers > 0.45) { 
                         if(state.current !== STATES.SCATTER) { state.current = STATES.SCATTER; state.targetTransition = 1; state.carouselTimer = 0; if(photos.length > 0 && state.focusedIdx === -1) state.focusedIdx = 0; }
-                        status.innerText = photos.length > 0 ? (state.isPinching ? `记忆定格：${state.focusedIdx + 1}/${photos.length} (👌锁定中)` : `轮播记忆：${state.focusedIdx + 1}/${photos.length}`) : "状态：星辰散落 (✋张开中)";
+                        status.innerText = photos.length > 0 ? (state.isPinching ? `记忆定格：${state.focusedIdx + 1}/${photos.length} (👌锁定中)` : `轮播照片：${state.focusedIdx + 1}/${photos.length}`) : "状态：星辰散落 (✋张开中)";
                         state.cameraRot.x = lm[9].y; state.cameraRot.y = (lm[9].x - 0.5) * 2;
                     }
                     if (!state.audioStarted) updateAudio();
