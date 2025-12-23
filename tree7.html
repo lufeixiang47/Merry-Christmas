@@ -129,10 +129,10 @@
 
     <!-- 音频元素 -->
     <audio id="bgm-tree" loop>
-        <source src="D:\桌面\剪映\Merry Christmas.mp3" type="audio/mpeg">
+        <source src="/Merry Christmas.mp3" type="audio/mpeg">
     </audio>
     <audio id="bgm-firework" loop>
-        <source src="D:\桌面\剪映\烟花效果.mp3" type="audio/mpeg">
+        <source src="/烟花效果.mp3" type="audio/mpeg">
     </audio>
 
     <div id="canvas-container"></div>
@@ -345,6 +345,7 @@
             ctx.fillText(lines[0], 500, 150);
             ctx.font = "900 65px Arial, sans-serif";
             ctx.fillText(lines[1], 500, 280);
+
 			
             const imageData = ctx.getImageData(0, 0, 1000, 400);
             const data = imageData.data;
